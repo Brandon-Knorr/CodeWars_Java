@@ -14,4 +14,18 @@ public class Main {
     public static String smash(String... words) {
         return String.join(" ", words);
     }
+
+
+
+    /*
+    Convert a Boolean to a String
+    - Implement a function which convert the given boolean value into its string representation.
+     */
+
+    public static String convert(boolean b) {
+        if (b == true) {
+            return "true";
+        }
+        return "false";
+    }
 }
