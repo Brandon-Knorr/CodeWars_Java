@@ -28,4 +28,15 @@ public class Main {
         }
         return "false";
     }
+
+
+
+    /*
+    Convert a Number to a String!
+    - We need a function that can transform a number (integer) into a string.
+    */
+
+    public static String numberToString(int num) {
+        return String.format("%d", num);
+    }
 }
