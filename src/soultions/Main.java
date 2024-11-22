@@ -1,5 +1,3 @@
-package soultions;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -49,7 +47,7 @@ public class Main {
     -Return the results as an array or list.
     */
 
-    public static int[] countBy(int x, int n){
+    public static int[] countBy(int x, int n) {
         int[] result = new int[n];
 
         for (int i = 0; i < n; i++) {
@@ -69,5 +67,24 @@ public class Main {
     public static String remove(String str) {
         return str.substring(1, str.length() - 1);
     }
-}
 
+
+
+    /*
+     Counting sheep...
+    -Consider an array/list of sheep where some sheep may be missing from their place.
+    -We need a function that counts the number of sheep present in the array (true means present).
+    */
+
+    public static int countSheeps(Boolean[] arrayOfSheeps) {
+        int count = 0;
+        int nonSheep = 0;
+        for (int i = 0; i <= arrayOfSheeps.length - 1; i++) {
+            if ((arrayOfSheeps[i] == null) || (arrayOfSheeps[i] == false)) {
+                nonSheep++;
+            } else count++;
+        }
+        return count;
+    }
+
+}
